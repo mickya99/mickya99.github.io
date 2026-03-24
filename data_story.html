@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Story - Group 15</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Specific Styles for the Data Story Page */
+      body {
+        background-color: #f8f9fa; /* Light grey background */
+        display: block; /* Override the flex centering from home page */
+        color: #2d3436;
+        line-height: 1.6;
+      }
+
+      .story-container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: white;
+        padding: 60px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 50px;
+        border-bottom: 2px solid #e94560;
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        color: #1a1a2e;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        border: none;
+      }
+      h2 {
+        color: #1a1a2e;
+        margin-top: 40px;
+        font-size: 1.8rem;
+      }
+
+      .intro-text {
+        font-size: 1.1rem;
+        color: #636e72;
+        font-style: italic;
+        margin-bottom: 30px;
+      }
+
+      /* Scientific Figure Styling */
+      .figure-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #ffffff;
+        border: 1px solid #dfe6e9;
+        border-radius: 4px;
+      }
+
+      .plot-placeholder {
+        width: 100%;
+        height: 400px;
+        background: #f1f2f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b2bec3;
+        border: 2px dashed #dfe6e9;
+        margin-bottom: 15px;
+      }
+
+      .figure-caption {
+        font-size: 0.9rem;
+        color: #2d3436;
+        border-left: 3px solid #e94560;
+        padding-left: 15px;
+        margin-top: 10px;
+      }
+
+      .figure-caption strong {
+        color: #e94560;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 50px;
+        color: #e94560;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="story-container">
+      <header>
+        <h1>The Dynamics of Urban Crime</h1>
+        <p class="intro-text">
+          An Analysis of San Francisco’s Social Data Landscape by Group 15
+        </p>
+      </header>
+
+      <section>
+        <h2>I. Introduction: Setting the Scene</h2>
+        <p>
+          Write your opening narrative here. Explain why we are looking at this
+          data and what the main goals of the visualization project were. This
+          section builds the context before the reader sees the first piece of
+          evidence.
+        </p>
+      </section>
+
+      <div class="figure-container">
+        <div class="plot-placeholder">
+          [Insert Matplotlib / Static Image Here]
+        </div>
+        <p class="figure-caption">
+          <strong>Figure 1.</strong> Historical Trends of Crime Categories. This
+          visualization illustrates the frequency of specific offenses over the
+          chosen time period.
+        </p>
+      </div>
+
+      <section>
+        <h2>II. Spatio-Temporal Distribution</h2>
+        <p>
+          Explain the findings from the first plot. What was surprising? How
+          does this lead us to the next visualization? Transition smoothly into
+          the geographical aspect of the data.
+        </p>
+      </section>
+
+      <div class="figure-container">
+        <div class="plot-placeholder">
+          [Insert Folium Map / Interactive Frame Here]
+        </div>
+        <p class="figure-caption">
+          <strong>Figure 2.</strong> Interactive Heatmap of Incidents. Use the
+          zoom and filter tools to explore high-density crime clusters across
+          different neighborhoods.
+        </p>
+      </div>
+
+      <section>
+        <h2>III. Detailed Offense Correlations</h2>
+        <p>
+          Use this section to dive deep into specific categories like Larceny or
+          Motor Vehicle Theft. This text should explain the "Why" behind the
+          patterns observed in the interactive map above.
+        </p>
+      </section>
+
+      <div class="figure-container">
+        <div class="plot-placeholder">[Insert Plotly Chart Here]</div>
+        <p class="figure-caption">
+          <strong>Figure 3.</strong> Multidimensional Correlation Analysis.
+          Hover over the data points to see the exact values and category
+          details for each incident type.
+        </p>
+      </div>
+
+      <section>
+        <h2>Conclusion</h2>
+        <p>
+          Summarize the key takeaways of the data story. What should the reader
+          remember most about Group 15's analysis?
+        </p>
+      </section>
+
+      <a href="index.html" class="back-link">← Return to Project Overview</a>
+    </article>
+  </body>
+</html>
