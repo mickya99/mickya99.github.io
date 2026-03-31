@@ -53,11 +53,21 @@ hr {
 
 /* Scientific Figure Styling */
 .figure-container {
-  margin: 40px 0;
   padding: 20px;
   background: #ffffff;
   border: 1px solid #dfe6e9;
   border-radius: 4px;
+
+  width: 100%; /* Or a specific width like 80%, 90% */
+  margin: 20px auto; /* Adds space above/below and centers the whole figure */
+  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+}
+
+.figure-container img {
+  max-width: 100%; /* Ensures the image never gets wider than the container */
+  height: auto; /* Maintains the aspect ratio so it doesn't look squished */
+  display: block; /* Removes the tiny gap often found at the bottom of images */
+  margin: 0 auto; /* Centers the image if the container is wider than the image */
 }
 
 .plot-placeholder {
@@ -78,6 +88,9 @@ hr {
   border-left: 3px solid #e94560;
   padding-left: 15px;
   margin-top: 10px;
+
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .figure-caption strong {
