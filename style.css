@@ -1,4 +1,5 @@
 body {
+  /*ackground-image: url("Tom&Jerry.jpg");*/
   background-color: #f8f9fa; /* Light grey background */
   display: flex; /* Override the flex centering from home page */
   justify-content: center;

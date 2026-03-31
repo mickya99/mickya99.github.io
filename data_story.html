@@ -6,42 +6,77 @@
     <title>Data Story - Group 15</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="background-image: url('Tom&Jerry.jpg')">
     <article class="container">
       <header>
-        <h1>The Dynamics of Urban Crime</h1>
+        <!-- Headline alternatives-->
+        <!--
+        <h1>Playing Catch</h1>
+        <h1>Cat and Mouse game as a Data story</h1> -->
+        <h1>A Cat and Mouse game? An Analysis of San Francisco's Crime Data</h1>
+
         <p class="intro-text">
-          An Analysis of San Francisco’s Social Data Landscape by Group 15
+          The well-known image of cats catching and playing with mice before
+          they eat them is a cliché. It's a cruel situation where the natural
+          predator-prey interaction can be observed in real life. San Francisco
+          crime data provides another potential story about this behavior
+          covered in data. Let's take a deep dive into the dynamics of crime
+          hotspots and police activities.
         </p>
       </header>
 
       <section>
-        <h2>I. Introduction: Setting the Scene</h2>
+        <h2>I. The Data: Find the Mouse and the Cat.</h2>
+        <!--
+          I. Introduction: Setting the Scene Write your opening narrative here.
+          Explain why we are looking at this data and what the main goals of the
+          visualization project were. This section builds the context before the
+          reader sees the first piece of evidence.
+        -->
         <p>
-          Write your opening narrative here. Explain why we are looking at this
-          data and what the main goals of the visualization project were. This
-          section builds the context before the reader sees the first piece of
-          evidence.
+          San Francisco is one of the biggest cities on the West Coast.
+          Startups. Silicon Valley. Google. Golden Gate Bridge. Those are what
+          tourists know about. For locals, life is much more than that. You are
+          concerned about finding good schools, good rent (if that's still
+          possible in SF), good places to go out, and good places to send your
+          kids so you can still feel like a responsible parent. Knowing about
+          possible crimes in the area can help a mother sleep at night when the
+          kids are out. So let's take a look at some of those areas.
+        </p>
+
+        <p>
+          <strong> brief introduction to the dataset</strong>
         </p>
       </section>
 
       <div class="figure-container">
         <div class="plot-placeholder">
-          [Insert Matplotlib / Static Image Here]
+          [<img
+            src="../images/Compare_Warrent&DrugOffense.png"
+            alt="Compare Warrent & DrugOffense"
+            style="max-width: 100%"
+          />
         </div>
         <p class="figure-caption">
-          <strong>Figure 1.</strong> Historical Trends of Crime Categories. This
-          visualization illustrates the frequency of specific offenses over the
-          chosen time period.
+          <strong>Figure 1.</strong> This Figure compares the geographic
+          concentration of Drug Offenses and Warrants across San Francisco's ten
+          police districts. The dashed inner circle represents the city-wide
+          average (1.0). Any bar extending beyond this line indicates a district
+          where that crime is over-represented compared to the rest of the city.
+          The plot highlights a significant spike in Tenderloin, as well as
+          smaller spikes in the Mission and Southern districts. In these
+          districts, both crimes, warrant and drug offense, are close to or even
+          five times higher than the average probability for the rest of the
+          city.
         </p>
       </div>
 
       <section>
-        <h2>II. Spatio-Temporal Distribution</h2>
+        <h2>II. San Francisco Map: Where are the hotspots?</h2>
         <p>
-          Explain the findings from the first plot. What was surprising? How
-          does this lead us to the next visualization? Transition smoothly into
-          the geographical aspect of the data.
+          <strong>Explain the findings from the first plot.</strong> What was
+          surprising? How does this lead us to the next visualization?
+          Transition smoothly into the geographical aspect of the data.
         </p>
       </section>
 
@@ -50,35 +85,40 @@
           [Insert Folium Map / Interactive Frame Here]
         </div>
         <p class="figure-caption">
-          <strong>Figure 2.</strong> Interactive Heatmap of Incidents. Use the
-          zoom and filter tools to explore high-density crime clusters across
-          different neighborhoods.
+          <strong>Figure 2.</strong> Heatmap of Incidents. Use the map to
+          explore crime clusters across different neighborhoods.
         </p>
       </div>
 
       <section>
-        <h2>III. Detailed Offense Correlations</h2>
+        <h2>III. Dynamic Over the Years: How Drug Hotspot evolve?</h2>
         <p>
-          Use this section to dive deep into specific categories like Larceny or
-          Motor Vehicle Theft. This text should explain the "Why" behind the
-          patterns observed in the interactive map above.
+          Use this section to Show an interactive Ploty plot. Mayby something
+          that changes over time. This text should explain the "Why" behind the
+          patterns observed in the map above and extend it with the ploty plot.
         </p>
       </section>
 
       <div class="figure-container">
         <div class="plot-placeholder">[Insert Plotly Chart Here]</div>
         <p class="figure-caption">
-          <strong>Figure 3.</strong> Multidimensional Correlation Analysis.
-          Hover over the data points to see the exact values and category
-          details for each incident type.
+          <strong>Figure 3.</strong> Interactive Ploty Plot. Hover over the data
+          points to see the exact values and category details for both incident
+          type, Warrant and Drug Offense.
         </p>
       </div>
 
       <section>
         <h2>Conclusion</h2>
         <p>
-          Summarize the key takeaways of the data story. What should the reader
-          remember most about Group 15's analysis?
+          <strong>
+            Summarize the key takeaways of the data story. What should the
+            reader remember?
+          </strong>
+          Funny Final Sentence: It's kind of ironic how the cat just needs to
+          sit in front of the mouse hole in the wall to make a good catch every
+          time. Again and Again. Is this due to a stupid mouse or a lazy cat or
+          just a dynamic in data?
         </p>
       </section>
 
